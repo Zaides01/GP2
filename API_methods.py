@@ -196,7 +196,9 @@ def get_video_comment(batch):
                     "video_id": row["id"],
                     "top_comment_text": ""
                 })
-                logger_API.info(f"Тут {row["owner_id"]}, {row["id"]} закрыты комментарии")
+                owner_id = row["owner_id"]
+                video_id = row["id"]
+                logger_API.info(f"Тут {owner_id}, {video_id} закрыты комментарии")
         logger_API.info(f"Успешно получили комментарии для {len(comments)} видео")
     time.sleep(0.5)
 
