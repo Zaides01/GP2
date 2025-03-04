@@ -1,0 +1,7 @@
+vk_request 2025-03-04 05:05:04,864 INFO Логирование vk_request...
+vk_request 2025-03-04 05:05:16,795 ERROR Ошибка: Too many requests per second
+vk_request 2025-03-04 05:05:17,379 ERROR Ошибка: Too many requests per second
+vk_request 2025-03-04 05:05:19,455 ERROR Ошибка: Too many requests per second
+vk_request 2025-03-04 05:05:20,045 ERROR Ошибка: Too many requests per second
+vk_request 2025-03-04 05:05:22,201 ERROR Ошибка: Too many requests per second
+vk_request 2025-03-04 05:05:22,794 ERROR Ошибка: Too many requests per second
