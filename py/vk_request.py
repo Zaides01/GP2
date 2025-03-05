@@ -1,10 +1,10 @@
 import requests
 import logging
 
-logger_requests = logging.getLogger("logs/vk_request")
+logger_requests = logging.getLogger("../logs/vk_request")
 logger_requests.setLevel(logging.INFO)
 
-handler_requests = logging.FileHandler("logs/vk_request.log", mode='w')
+handler_requests = logging.FileHandler("../logs/vk_request.log", mode='w')
 formatter_requests = logging.Formatter("%(name)s %(asctime)s %(levelname)s %(message)s")
 
 handler_requests.setFormatter(formatter_requests)

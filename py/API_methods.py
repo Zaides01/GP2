@@ -1,12 +1,12 @@
 import time
 import logging
 
-from vk_request import vk_request
+from py.vk_request import vk_request
 
-logger_API = logging.getLogger("logs/API_methods.log")
+logger_API = logging.getLogger("../logs/API_methods.log")
 logger_API.setLevel(logging.INFO)
 
-handler_API = logging.FileHandler("logs/API_methods.log", mode='w')
+handler_API = logging.FileHandler("../logs/API_methods.log", mode='w')
 formatter_API = logging.Formatter("%(name)s %(asctime)s %(levelname)s %(message)s")
 
 handler_API.setFormatter(formatter_API)
