@@ -1,0 +1,599 @@
+2025-03-04 23:58:55,523 DEBUG Debug информация
+2025-03-04 23:58:55,524 INFO Информационное сообщение
+2025-03-04 23:58:55,524 WARNING Предупреждение!
+2025-03-04 23:58:55,524 ERROR Ошибка
+2025-03-04 23:58:55,524 CRITICAL Критическая ошибка!
+2025-03-04 23:59:09,238 DEBUG Starting new HTTPS connection (1): vk.com:443
+2025-03-04 23:59:09,311 DEBUG https://vk.com:443 "GET /video/trends HTTP/11" 301 20
+2025-03-04 23:59:09,313 DEBUG Starting new HTTPS connection (1): vkvideo.ru:443
+2025-03-04 23:59:09,390 DEBUG https://vkvideo.ru:443 "GET /trends?enableAutoLogin=1 HTTP/11" 302 20
+2025-03-04 23:59:09,393 DEBUG Starting new HTTPS connection (1): login.vk.com:443
+2025-03-04 23:59:09,462 DEBUG https://login.vk.com:443 "GET /?act=autologin&redirect_uri=https://vkvideo.ru&state=eyJzdGF0ZSI6ImYzYTdhOTljLWQ3MzAtNDQ4MC05OTgyLWMwOGM1NmQwMzYyMCIsInJldHVybl90byI6IlwvdHJlbmRzP2VuYWJsZUF1dG9Mb2dpbj0xIiwiYXV0b2xvZ2luIjp0cnVlfQ%3D%3D&uuid=fc23ab3ca0&app_id=52461373 HTTP/11" 302 20
+2025-03-04 23:59:09,488 DEBUG https://vkvideo.ru:443 "GET /?errorCode=11300&errorText=invalid%20user HTTP/11" 302 20
+2025-03-04 23:59:09,524 DEBUG https://vkvideo.ru:443 "GET /trends HTTP/11" 302 20
+2025-03-04 23:59:09,529 DEBUG Starting new HTTPS connection (1): m.vkvideo.ru:443
+2025-03-04 23:59:09,689 DEBUG https://m.vkvideo.ru:443 "GET /trends HTTP/11" 200 30060
+2025-03-04 23:59:11,254 DEBUG Skipping Selenium Manager; path to chrome driver specified in Service class: /Users/aazaides/Documents/chromedriver-mac-arm64/chromedriver
+2025-03-04 23:59:11,263 DEBUG Started executable: `/Users/aazaides/Documents/chromedriver-mac-arm64/chromedriver` in a child process with pid: 87490 using 0 to output -3
+2025-03-04 23:59:11,460 DEBUG POST http://localhost:56685/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'browserName': 'chrome', 'pageLoadStrategy': <PageLoadStrategy.normal: 'normal'>, 'goog:chromeOptions': {'extensions': [], 'binary': '/Applications/Yandex.app/Contents/MacOS/Yandex', 'args': []}}}}
+2025-03-04 23:59:11,461 DEBUG Starting new HTTP connection (1): localhost:56685
+2025-03-04 23:59:12,644 DEBUG http://localhost:56685 "POST /session HTTP/11" 200 0
+2025-03-04 23:59:12,648 DEBUG Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"132.0.6834.2183","chrome":{"chromedriverVersion":"132.0.6834.83 (03d59cf5ecf1d8444838ff9a1e96231304d4ff9c-refs/branch-heads/6834@{#3390})","userDataDir":"/var/folders/wj/jzwd6lfn7xx02ns8v_wr29bm0000gn/T/.org.chromium.Chromium.Pz4UYi"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:56694"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"mac","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"5bf71c1b48dbc5565bf63727039754f0"}} | headers=HTTPHeaderDict({'Content-Length': '892', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:12,648 DEBUG Finished Request
+2025-03-04 23:59:12,649 DEBUG POST http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/url {'url': 'https://vk.com/video/trends'}
+2025-03-04 23:59:15,210 DEBUG http://localhost:56685 "POST /session/5bf71c1b48dbc5565bf63727039754f0/url HTTP/11" 200 0
+2025-03-04 23:59:15,210 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:15,210 DEBUG Finished Request
+2025-03-04 23:59:15,210 DEBUG POST http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/elements {'using': 'css selector', 'value': '.VideoCard__info'}
+2025-03-04 23:59:15,217 DEBUG http://localhost:56685 "POST /session/5bf71c1b48dbc5565bf63727039754f0/elements HTTP/11" 200 0
+2025-03-04 23:59:15,217 DEBUG Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.49"},{"element-6066-11e4-a52e-4f735466cecf":"f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.50"},{"element-6066-11e4-a52e-4f735466cecf":"f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.51"},{"element-6066-11e4-a52e-4f735466cecf":"f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.52"},{"element-6066-11e4-a52e-4f735466cecf":"f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.53"},{"element-6066-11e4-a52e-4f735466cecf":"f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.54"},{"element-6066-11e4-a52e-4f735466cecf":"f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.55"},{"element-6066-11e4-a52e-4f735466cecf":"f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.56"},{"element-6066-11e4-a52e-4f735466cecf":"f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.57"},{"element-6066-11e4-a52e-4f735466cecf":"f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.58"},{"element-6066-11e4-a52e-4f735466cecf":"f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.59"},{"element-6066-11e4-a52e-4f735466cecf":"f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.60"},{"element-6066-11e4-a52e-4f735466cecf":"f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.61"},{"element-6066-11e4-a52e-4f735466cecf":"f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.62"},{"element-6066-11e4-a52e-4f735466cecf":"f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.63"},{"element-6066-11e4-a52e-4f735466cecf":"f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.64"},{"element-6066-11e4-a52e-4f735466cecf":"f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.65"},{"element-6066-11e4-a52e-4f735466cecf":"f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.66"},{"element-6066-11e4-a52e-4f735466cecf":"f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.67"},{"element-6066-11e4-a52e-4f735466cecf":"f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.68"}]} | headers=HTTPHeaderDict({'Content-Length': '2351', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:15,217 DEBUG Finished Request
+2025-03-04 23:59:20,221 DEBUG POST http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/elements {'using': 'css selector', 'value': '.VideoCard__info'}
+2025-03-04 23:59:20,230 DEBUG http://localhost:56685 "POST /session/5bf71c1b48dbc5565bf63727039754f0/elements HTTP/11" 200 0
+2025-03-04 23:59:20,231 DEBUG Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.49"},{"element-6066-11e4-a52e-4f735466cecf":"f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.50"},{"element-6066-11e4-a52e-4f735466cecf":"f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.51"},{"element-6066-11e4-a52e-4f735466cecf":"f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.52"},{"element-6066-11e4-a52e-4f735466cecf":"f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.53"},{"element-6066-11e4-a52e-4f735466cecf":"f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.54"},{"element-6066-11e4-a52e-4f735466cecf":"f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.55"},{"element-6066-11e4-a52e-4f735466cecf":"f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.56"},{"element-6066-11e4-a52e-4f735466cecf":"f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.57"},{"element-6066-11e4-a52e-4f735466cecf":"f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.58"},{"element-6066-11e4-a52e-4f735466cecf":"f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.59"},{"element-6066-11e4-a52e-4f735466cecf":"f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.60"},{"element-6066-11e4-a52e-4f735466cecf":"f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.61"},{"element-6066-11e4-a52e-4f735466cecf":"f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.62"},{"element-6066-11e4-a52e-4f735466cecf":"f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.63"},{"element-6066-11e4-a52e-4f735466cecf":"f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.64"},{"element-6066-11e4-a52e-4f735466cecf":"f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.65"},{"element-6066-11e4-a52e-4f735466cecf":"f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.66"},{"element-6066-11e4-a52e-4f735466cecf":"f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.67"},{"element-6066-11e4-a52e-4f735466cecf":"f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.68"}]} | headers=HTTPHeaderDict({'Content-Length': '2351', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,231 DEBUG Finished Request
+2025-03-04 23:59:20,231 INFO Найдено видео: 20
+2025-03-04 23:59:20,231 DEBUG POST http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.49/element {'using': 'css selector', 'value': '.VideoCard__title'}
+2025-03-04 23:59:20,241 DEBUG http://localhost:56685 "POST /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.49/element HTTP/11" 200 0
+2025-03-04 23:59:20,242 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.69"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,242 DEBUG Finished Request
+2025-03-04 23:59:20,242 DEBUG GET http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.69/text {}
+2025-03-04 23:59:20,253 DEBUG http://localhost:56685 "GET /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.69/text HTTP/11" 200 0
+2025-03-04 23:59:20,253 DEBUG Remote response: status=200 | data={"value":"«Маска». 6 сезон. 4 выпуск"} | headers=HTTPHeaderDict({'Content-Length': '56', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,253 DEBUG Finished Request
+2025-03-04 23:59:20,253 DEBUG POST http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.49/element {'using': 'css selector', 'value': '.VideoCard__ownerLink'}
+2025-03-04 23:59:20,260 DEBUG http://localhost:56685 "POST /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.49/element HTTP/11" 200 0
+2025-03-04 23:59:20,260 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.70"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,260 DEBUG Finished Request
+2025-03-04 23:59:20,260 DEBUG GET http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.70/text {}
+2025-03-04 23:59:20,264 DEBUG http://localhost:56685 "GET /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.70/text HTTP/11" 200 0
+2025-03-04 23:59:20,264 DEBUG Remote response: status=200 | data={"value":"Маска"} | headers=HTTPHeaderDict({'Content-Length': '22', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,265 DEBUG Finished Request
+2025-03-04 23:59:20,265 DEBUG POST http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.49/element {'using': 'css selector', 'value': '.VideoCard__extendedInfoView'}
+2025-03-04 23:59:20,270 DEBUG http://localhost:56685 "POST /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.49/element HTTP/11" 200 0
+2025-03-04 23:59:20,270 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.71"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,271 DEBUG Finished Request
+2025-03-04 23:59:20,271 DEBUG GET http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.71/text {}
+2025-03-04 23:59:20,274 DEBUG http://localhost:56685 "GET /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.71/text HTTP/11" 200 0
+2025-03-04 23:59:20,274 DEBUG Remote response: status=200 | data={"value":"7,5 млн просмотров"} | headers=HTTPHeaderDict({'Content-Length': '43', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,275 DEBUG Finished Request
+2025-03-04 23:59:20,275 DEBUG POST http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.49/elements {'using': 'css selector', 'value': '.page_verified'}
+2025-03-04 23:59:20,280 DEBUG http://localhost:56685 "POST /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.49/elements HTTP/11" 200 0
+2025-03-04 23:59:20,280 DEBUG Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.2"}]} | headers=HTTPHeaderDict({'Content-Length': '127', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,280 DEBUG Finished Request
+2025-03-04 23:59:20,280 DEBUG POST http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.50/element {'using': 'css selector', 'value': '.VideoCard__title'}
+2025-03-04 23:59:20,283 DEBUG http://localhost:56685 "POST /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.50/element HTTP/11" 200 0
+2025-03-04 23:59:20,283 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.72"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,283 DEBUG Finished Request
+2025-03-04 23:59:20,283 DEBUG GET http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.72/text {}
+2025-03-04 23:59:20,287 DEBUG http://localhost:56685 "GET /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.72/text HTTP/11" 200 0
+2025-03-04 23:59:20,287 DEBUG Remote response: status=200 | data={"value":"Унижение в Белом Доме — Конец Зеленского №136"} | headers=HTTPHeaderDict({'Content-Length': '94', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,287 DEBUG Finished Request
+2025-03-04 23:59:20,287 DEBUG POST http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.50/element {'using': 'css selector', 'value': '.VideoCard__ownerLink'}
+2025-03-04 23:59:20,290 DEBUG http://localhost:56685 "POST /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.50/element HTTP/11" 200 0
+2025-03-04 23:59:20,290 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.73"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,290 DEBUG Finished Request
+2025-03-04 23:59:20,290 DEBUG GET http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.73/text {}
+2025-03-04 23:59:20,323 DEBUG http://localhost:56685 "GET /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.73/text HTTP/11" 200 0
+2025-03-04 23:59:20,323 DEBUG Remote response: status=200 | data={"value":"Стас Ай, Как Просто!"} | headers=HTTPHeaderDict({'Content-Length': '47', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,324 DEBUG Finished Request
+2025-03-04 23:59:20,324 DEBUG POST http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.50/element {'using': 'css selector', 'value': '.VideoCard__extendedInfoView'}
+2025-03-04 23:59:20,331 DEBUG http://localhost:56685 "POST /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.50/element HTTP/11" 200 0
+2025-03-04 23:59:20,331 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.74"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,331 DEBUG Finished Request
+2025-03-04 23:59:20,331 DEBUG GET http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.74/text {}
+2025-03-04 23:59:20,334 DEBUG http://localhost:56685 "GET /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.74/text HTTP/11" 200 0
+2025-03-04 23:59:20,334 DEBUG Remote response: status=200 | data={"value":"1,2 млн просмотров"} | headers=HTTPHeaderDict({'Content-Length': '43', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,334 DEBUG Finished Request
+2025-03-04 23:59:20,334 DEBUG POST http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.50/elements {'using': 'css selector', 'value': '.page_verified'}
+2025-03-04 23:59:20,337 DEBUG http://localhost:56685 "POST /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.50/elements HTTP/11" 200 0
+2025-03-04 23:59:20,337 DEBUG Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.4"}]} | headers=HTTPHeaderDict({'Content-Length': '127', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,337 DEBUG Finished Request
+2025-03-04 23:59:20,337 DEBUG POST http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.51/element {'using': 'css selector', 'value': '.VideoCard__title'}
+2025-03-04 23:59:20,340 DEBUG http://localhost:56685 "POST /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.51/element HTTP/11" 200 0
+2025-03-04 23:59:20,340 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.75"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,340 DEBUG Finished Request
+2025-03-04 23:59:20,340 DEBUG GET http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.75/text {}
+2025-03-04 23:59:20,343 DEBUG http://localhost:56685 "GET /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.75/text HTTP/11" 200 0
+2025-03-04 23:59:20,343 DEBUG Remote response: status=200 | data={"value":"НАРИСУЙ ЛОГОТИП ПО ПАМЯТИ ЧЕЛЛЕНДЖ или ЗАДОНАТЬ! Ft. Deepins"} | headers=HTTPHeaderDict({'Content-Length': '113', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,343 DEBUG Finished Request
+2025-03-04 23:59:20,343 DEBUG POST http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.51/element {'using': 'css selector', 'value': '.VideoCard__ownerLink'}
+2025-03-04 23:59:20,346 DEBUG http://localhost:56685 "POST /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.51/element HTTP/11" 200 0
+2025-03-04 23:59:20,346 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.76"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,346 DEBUG Finished Request
+2025-03-04 23:59:20,346 DEBUG GET http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.76/text {}
+2025-03-04 23:59:20,349 DEBUG http://localhost:56685 "GET /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.76/text HTTP/11" 200 0
+2025-03-04 23:59:20,349 DEBUG Remote response: status=200 | data={"value":"ГЛЕНТ"} | headers=HTTPHeaderDict({'Content-Length': '22', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,349 DEBUG Finished Request
+2025-03-04 23:59:20,349 DEBUG POST http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.51/element {'using': 'css selector', 'value': '.VideoCard__extendedInfoView'}
+2025-03-04 23:59:20,351 DEBUG http://localhost:56685 "POST /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.51/element HTTP/11" 200 0
+2025-03-04 23:59:20,351 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.77"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,351 DEBUG Finished Request
+2025-03-04 23:59:20,351 DEBUG GET http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.77/text {}
+2025-03-04 23:59:20,354 DEBUG http://localhost:56685 "GET /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.77/text HTTP/11" 200 0
+2025-03-04 23:59:20,354 DEBUG Remote response: status=200 | data={"value":"894 тыс просмотров"} | headers=HTTPHeaderDict({'Content-Length': '43', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,354 DEBUG Finished Request
+2025-03-04 23:59:20,354 DEBUG POST http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.51/elements {'using': 'css selector', 'value': '.page_verified'}
+2025-03-04 23:59:20,357 DEBUG http://localhost:56685 "POST /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.51/elements HTTP/11" 200 0
+2025-03-04 23:59:20,357 DEBUG Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.5"}]} | headers=HTTPHeaderDict({'Content-Length': '127', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,357 DEBUG Finished Request
+2025-03-04 23:59:20,357 DEBUG POST http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.52/element {'using': 'css selector', 'value': '.VideoCard__title'}
+2025-03-04 23:59:20,359 DEBUG http://localhost:56685 "POST /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.52/element HTTP/11" 200 0
+2025-03-04 23:59:20,359 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.78"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,359 DEBUG Finished Request
+2025-03-04 23:59:20,360 DEBUG GET http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.78/text {}
+2025-03-04 23:59:20,362 DEBUG http://localhost:56685 "GET /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.78/text HTTP/11" 200 0
+2025-03-04 23:59:20,362 DEBUG Remote response: status=200 | data={"value":"Вопрос Ребром — Николай Василенко"} | headers=HTTPHeaderDict({'Content-Length': '75', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,362 DEBUG Finished Request
+2025-03-04 23:59:20,362 DEBUG POST http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.52/element {'using': 'css selector', 'value': '.VideoCard__ownerLink'}
+2025-03-04 23:59:20,365 DEBUG http://localhost:56685 "POST /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.52/element HTTP/11" 200 0
+2025-03-04 23:59:20,365 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.79"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,365 DEBUG Finished Request
+2025-03-04 23:59:20,365 DEBUG GET http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.79/text {}
+2025-03-04 23:59:20,368 DEBUG http://localhost:56685 "GET /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.79/text HTTP/11" 200 0
+2025-03-04 23:59:20,368 DEBUG Remote response: status=200 | data={"value":"GAZ"} | headers=HTTPHeaderDict({'Content-Length': '15', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,368 DEBUG Finished Request
+2025-03-04 23:59:20,368 DEBUG POST http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.52/element {'using': 'css selector', 'value': '.VideoCard__extendedInfoView'}
+2025-03-04 23:59:20,371 DEBUG http://localhost:56685 "POST /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.52/element HTTP/11" 200 0
+2025-03-04 23:59:20,371 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.80"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,371 DEBUG Finished Request
+2025-03-04 23:59:20,371 DEBUG GET http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.80/text {}
+2025-03-04 23:59:20,374 DEBUG http://localhost:56685 "GET /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.80/text HTTP/11" 200 0
+2025-03-04 23:59:20,374 DEBUG Remote response: status=200 | data={"value":"874 тыс просмотров"} | headers=HTTPHeaderDict({'Content-Length': '43', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,374 DEBUG Finished Request
+2025-03-04 23:59:20,374 DEBUG POST http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.52/elements {'using': 'css selector', 'value': '.page_verified'}
+2025-03-04 23:59:20,376 DEBUG http://localhost:56685 "POST /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.52/elements HTTP/11" 200 0
+2025-03-04 23:59:20,376 DEBUG Remote response: status=200 | data={"value":[]} | headers=HTTPHeaderDict({'Content-Length': '12', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,376 DEBUG Finished Request
+2025-03-04 23:59:20,376 DEBUG POST http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.53/element {'using': 'css selector', 'value': '.VideoCard__title'}
+2025-03-04 23:59:20,379 DEBUG http://localhost:56685 "POST /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.53/element HTTP/11" 200 0
+2025-03-04 23:59:20,379 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.81"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,379 DEBUG Finished Request
+2025-03-04 23:59:20,379 DEBUG GET http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.81/text {}
+2025-03-04 23:59:20,382 DEBUG http://localhost:56685 "GET /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.81/text HTTP/11" 200 0
+2025-03-04 23:59:20,382 DEBUG Remote response: status=200 | data={"value":"Изолирующие секты: Как лидеры культов ломают жизни / МИНАЕВ LIVE"} | headers=HTTPHeaderDict({'Content-Length': '125', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,382 DEBUG Finished Request
+2025-03-04 23:59:20,382 DEBUG POST http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.53/element {'using': 'css selector', 'value': '.VideoCard__ownerLink'}
+2025-03-04 23:59:20,385 DEBUG http://localhost:56685 "POST /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.53/element HTTP/11" 200 0
+2025-03-04 23:59:20,385 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.82"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,385 DEBUG Finished Request
+2025-03-04 23:59:20,385 DEBUG GET http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.82/text {}
+2025-03-04 23:59:20,388 DEBUG http://localhost:56685 "GET /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.82/text HTTP/11" 200 0
+2025-03-04 23:59:20,388 DEBUG Remote response: status=200 | data={"value":"Минаев Live"} | headers=HTTPHeaderDict({'Content-Length': '29', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,388 DEBUG Finished Request
+2025-03-04 23:59:20,388 DEBUG POST http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.53/element {'using': 'css selector', 'value': '.VideoCard__extendedInfoView'}
+2025-03-04 23:59:20,390 DEBUG http://localhost:56685 "POST /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.53/element HTTP/11" 200 0
+2025-03-04 23:59:20,390 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.83"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,390 DEBUG Finished Request
+2025-03-04 23:59:20,390 DEBUG GET http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.83/text {}
+2025-03-04 23:59:20,393 DEBUG http://localhost:56685 "GET /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.83/text HTTP/11" 200 0
+2025-03-04 23:59:20,393 DEBUG Remote response: status=200 | data={"value":"1,5 млн просмотров"} | headers=HTTPHeaderDict({'Content-Length': '43', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,393 DEBUG Finished Request
+2025-03-04 23:59:20,393 DEBUG POST http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.53/elements {'using': 'css selector', 'value': '.page_verified'}
+2025-03-04 23:59:20,396 DEBUG http://localhost:56685 "POST /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.53/elements HTTP/11" 200 0
+2025-03-04 23:59:20,396 DEBUG Remote response: status=200 | data={"value":[]} | headers=HTTPHeaderDict({'Content-Length': '12', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,396 DEBUG Finished Request
+2025-03-04 23:59:20,396 DEBUG POST http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.54/element {'using': 'css selector', 'value': '.VideoCard__title'}
+2025-03-04 23:59:20,399 DEBUG http://localhost:56685 "POST /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.54/element HTTP/11" 200 0
+2025-03-04 23:59:20,399 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.84"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,399 DEBUG Finished Request
+2025-03-04 23:59:20,399 DEBUG GET http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.84/text {}
+2025-03-04 23:59:20,401 DEBUG http://localhost:56685 "GET /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.84/text HTTP/11" 200 0
+2025-03-04 23:59:20,401 DEBUG Remote response: status=200 | data={"value":"Подарил Однокласснице 100 Подарков !"} | headers=HTTPHeaderDict({'Content-Length': '76', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,401 DEBUG Finished Request
+2025-03-04 23:59:20,401 DEBUG POST http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.54/element {'using': 'css selector', 'value': '.VideoCard__ownerLink'}
+2025-03-04 23:59:20,404 DEBUG http://localhost:56685 "POST /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.54/element HTTP/11" 200 0
+2025-03-04 23:59:20,404 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.85"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,404 DEBUG Finished Request
+2025-03-04 23:59:20,404 DEBUG GET http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.85/text {}
+2025-03-04 23:59:20,407 DEBUG http://localhost:56685 "GET /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.85/text HTTP/11" 200 0
+2025-03-04 23:59:20,407 DEBUG Remote response: status=200 | data={"value":"Луномосик"} | headers=HTTPHeaderDict({'Content-Length': '30', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,407 DEBUG Finished Request
+2025-03-04 23:59:20,407 DEBUG POST http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.54/element {'using': 'css selector', 'value': '.VideoCard__extendedInfoView'}
+2025-03-04 23:59:20,410 DEBUG http://localhost:56685 "POST /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.54/element HTTP/11" 200 0
+2025-03-04 23:59:20,410 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.86"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,410 DEBUG Finished Request
+2025-03-04 23:59:20,410 DEBUG GET http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.86/text {}
+2025-03-04 23:59:20,413 DEBUG http://localhost:56685 "GET /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.86/text HTTP/11" 200 0
+2025-03-04 23:59:20,413 DEBUG Remote response: status=200 | data={"value":"318 тыс просмотров"} | headers=HTTPHeaderDict({'Content-Length': '43', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,413 DEBUG Finished Request
+2025-03-04 23:59:20,413 DEBUG POST http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.54/elements {'using': 'css selector', 'value': '.page_verified'}
+2025-03-04 23:59:20,415 DEBUG http://localhost:56685 "POST /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.54/elements HTTP/11" 200 0
+2025-03-04 23:59:20,415 DEBUG Remote response: status=200 | data={"value":[]} | headers=HTTPHeaderDict({'Content-Length': '12', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,415 DEBUG Finished Request
+2025-03-04 23:59:20,415 DEBUG POST http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.55/element {'using': 'css selector', 'value': '.VideoCard__title'}
+2025-03-04 23:59:20,418 DEBUG http://localhost:56685 "POST /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.55/element HTTP/11" 200 0
+2025-03-04 23:59:20,418 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.87"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,418 DEBUG Finished Request
+2025-03-04 23:59:20,418 DEBUG GET http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.87/text {}
+2025-03-04 23:59:20,421 DEBUG http://localhost:56685 "GET /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.87/text HTTP/11" 200 0
+2025-03-04 23:59:20,421 DEBUG Remote response: status=200 | data={"value":"Отец после операции на глаза УВИДЕЛ мою BMW X5 M. Реакция"} | headers=HTTPHeaderDict({'Content-Length': '109', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,421 DEBUG Finished Request
+2025-03-04 23:59:20,421 DEBUG POST http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.55/element {'using': 'css selector', 'value': '.VideoCard__ownerLink'}
+2025-03-04 23:59:20,424 DEBUG http://localhost:56685 "POST /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.55/element HTTP/11" 200 0
+2025-03-04 23:59:20,424 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.88"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,424 DEBUG Finished Request
+2025-03-04 23:59:20,424 DEBUG GET http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.88/text {}
+2025-03-04 23:59:20,427 DEBUG http://localhost:56685 "GET /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.88/text HTTP/11" 200 0
+2025-03-04 23:59:20,427 DEBUG Remote response: status=200 | data={"value":"Туман"} | headers=HTTPHeaderDict({'Content-Length': '22', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,427 DEBUG Finished Request
+2025-03-04 23:59:20,427 DEBUG POST http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.55/element {'using': 'css selector', 'value': '.VideoCard__extendedInfoView'}
+2025-03-04 23:59:20,429 DEBUG http://localhost:56685 "POST /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.55/element HTTP/11" 200 0
+2025-03-04 23:59:20,430 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.89"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,430 DEBUG Finished Request
+2025-03-04 23:59:20,430 DEBUG GET http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.89/text {}
+2025-03-04 23:59:20,432 DEBUG http://localhost:56685 "GET /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.89/text HTTP/11" 200 0
+2025-03-04 23:59:20,432 DEBUG Remote response: status=200 | data={"value":"356 тыс просмотров"} | headers=HTTPHeaderDict({'Content-Length': '43', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,432 DEBUG Finished Request
+2025-03-04 23:59:20,433 DEBUG POST http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.55/elements {'using': 'css selector', 'value': '.page_verified'}
+2025-03-04 23:59:20,435 DEBUG http://localhost:56685 "POST /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.55/elements HTTP/11" 200 0
+2025-03-04 23:59:20,435 DEBUG Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.90"}]} | headers=HTTPHeaderDict({'Content-Length': '128', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,435 DEBUG Finished Request
+2025-03-04 23:59:20,435 DEBUG POST http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.56/element {'using': 'css selector', 'value': '.VideoCard__title'}
+2025-03-04 23:59:20,438 DEBUG http://localhost:56685 "POST /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.56/element HTTP/11" 200 0
+2025-03-04 23:59:20,438 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.91"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,438 DEBUG Finished Request
+2025-03-04 23:59:20,438 DEBUG GET http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.91/text {}
+2025-03-04 23:59:20,441 DEBUG http://localhost:56685 "GET /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.91/text HTTP/11" 200 0
+2025-03-04 23:59:20,441 DEBUG Remote response: status=200 | data={"value":"Александр Скиданов, Никита Никитин, Настя Ли, Влад Копытов-Шамрай, Чочиева и Павлов. Квиз-Стендап."} | headers=HTTPHeaderDict({'Content-Length': '189', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,441 DEBUG Finished Request
+2025-03-04 23:59:20,441 DEBUG POST http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.56/element {'using': 'css selector', 'value': '.VideoCard__ownerLink'}
+2025-03-04 23:59:20,443 DEBUG http://localhost:56685 "POST /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.56/element HTTP/11" 200 0
+2025-03-04 23:59:20,443 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.92"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,443 DEBUG Finished Request
+2025-03-04 23:59:20,444 DEBUG GET http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.92/text {}
+2025-03-04 23:59:20,446 DEBUG http://localhost:56685 "GET /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.92/text HTTP/11" 200 0
+2025-03-04 23:59:20,446 DEBUG Remote response: status=200 | data={"value":"ИКС"} | headers=HTTPHeaderDict({'Content-Length': '18', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,446 DEBUG Finished Request
+2025-03-04 23:59:20,446 DEBUG POST http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.56/element {'using': 'css selector', 'value': '.VideoCard__extendedInfoView'}
+2025-03-04 23:59:20,449 DEBUG http://localhost:56685 "POST /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.56/element HTTP/11" 200 0
+2025-03-04 23:59:20,449 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.93"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,449 DEBUG Finished Request
+2025-03-04 23:59:20,449 DEBUG GET http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.93/text {}
+2025-03-04 23:59:20,452 DEBUG http://localhost:56685 "GET /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.93/text HTTP/11" 200 0
+2025-03-04 23:59:20,452 DEBUG Remote response: status=200 | data={"value":"652 тыс просмотров"} | headers=HTTPHeaderDict({'Content-Length': '43', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,452 DEBUG Finished Request
+2025-03-04 23:59:20,452 DEBUG POST http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.56/elements {'using': 'css selector', 'value': '.page_verified'}
+2025-03-04 23:59:20,454 DEBUG http://localhost:56685 "POST /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.56/elements HTTP/11" 200 0
+2025-03-04 23:59:20,454 DEBUG Remote response: status=200 | data={"value":[]} | headers=HTTPHeaderDict({'Content-Length': '12', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,454 DEBUG Finished Request
+2025-03-04 23:59:20,454 DEBUG POST http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.57/element {'using': 'css selector', 'value': '.VideoCard__title'}
+2025-03-04 23:59:20,457 DEBUG http://localhost:56685 "POST /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.57/element HTTP/11" 200 0
+2025-03-04 23:59:20,457 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.94"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,457 DEBUG Finished Request
+2025-03-04 23:59:20,457 DEBUG GET http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.94/text {}
+2025-03-04 23:59:20,460 DEBUG http://localhost:56685 "GET /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.94/text HTTP/11" 200 0
+2025-03-04 23:59:20,460 DEBUG Remote response: status=200 | data={"value":"Goblin News 140: встреча Зеленского и Трампа"} | headers=HTTPHeaderDict({'Content-Length': '80', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,460 DEBUG Finished Request
+2025-03-04 23:59:20,460 DEBUG POST http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.57/element {'using': 'css selector', 'value': '.VideoCard__ownerLink'}
+2025-03-04 23:59:20,463 DEBUG http://localhost:56685 "POST /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.57/element HTTP/11" 200 0
+2025-03-04 23:59:20,463 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.95"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,463 DEBUG Finished Request
+2025-03-04 23:59:20,463 DEBUG GET http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.95/text {}
+2025-03-04 23:59:20,465 DEBUG http://localhost:56685 "GET /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.95/text HTTP/11" 200 0
+2025-03-04 23:59:20,465 DEBUG Remote response: status=200 | data={"value":"Дмитрий Goblin Пучков"} | headers=HTTPHeaderDict({'Content-Length': '46', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,465 DEBUG Finished Request
+2025-03-04 23:59:20,466 DEBUG POST http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.57/element {'using': 'css selector', 'value': '.VideoCard__extendedInfoView'}
+2025-03-04 23:59:20,468 DEBUG http://localhost:56685 "POST /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.57/element HTTP/11" 200 0
+2025-03-04 23:59:20,468 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.96"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,468 DEBUG Finished Request
+2025-03-04 23:59:20,468 DEBUG GET http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.96/text {}
+2025-03-04 23:59:20,471 DEBUG http://localhost:56685 "GET /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.96/text HTTP/11" 200 0
+2025-03-04 23:59:20,471 DEBUG Remote response: status=200 | data={"value":"230 тыс просмотров"} | headers=HTTPHeaderDict({'Content-Length': '43', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,471 DEBUG Finished Request
+2025-03-04 23:59:20,471 DEBUG POST http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.57/elements {'using': 'css selector', 'value': '.page_verified'}
+2025-03-04 23:59:20,474 DEBUG http://localhost:56685 "POST /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.57/elements HTTP/11" 200 0
+2025-03-04 23:59:20,474 DEBUG Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.97"}]} | headers=HTTPHeaderDict({'Content-Length': '128', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,474 DEBUG Finished Request
+2025-03-04 23:59:20,474 DEBUG POST http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.58/element {'using': 'css selector', 'value': '.VideoCard__title'}
+2025-03-04 23:59:20,477 DEBUG http://localhost:56685 "POST /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.58/element HTTP/11" 200 0
+2025-03-04 23:59:20,477 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.98"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,477 DEBUG Finished Request
+2025-03-04 23:59:20,477 DEBUG GET http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.98/text {}
+2025-03-04 23:59:20,480 DEBUG http://localhost:56685 "GET /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.98/text HTTP/11" 200 0
+2025-03-04 23:59:20,480 DEBUG Remote response: status=200 | data={"value":"LiXiang Li 9. БОЛЬШОЙ ОБЗОР"} | headers=HTTPHeaderDict({'Content-Length': '51', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,480 DEBUG Finished Request
+2025-03-04 23:59:20,480 DEBUG POST http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.58/element {'using': 'css selector', 'value': '.VideoCard__ownerLink'}
+2025-03-04 23:59:20,482 DEBUG http://localhost:56685 "POST /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.58/element HTTP/11" 200 0
+2025-03-04 23:59:20,482 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.99"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,482 DEBUG Finished Request
+2025-03-04 23:59:20,482 DEBUG GET http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.99/text {}
+2025-03-04 23:59:20,485 DEBUG http://localhost:56685 "GET /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.99/text HTTP/11" 200 0
+2025-03-04 23:59:20,485 DEBUG Remote response: status=200 | data={"value":"Асафьев Стас"} | headers=HTTPHeaderDict({'Content-Length': '35', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,485 DEBUG Finished Request
+2025-03-04 23:59:20,485 DEBUG POST http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.58/element {'using': 'css selector', 'value': '.VideoCard__extendedInfoView'}
+2025-03-04 23:59:20,488 DEBUG http://localhost:56685 "POST /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.58/element HTTP/11" 200 0
+2025-03-04 23:59:20,488 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.100"}} | headers=HTTPHeaderDict({'Content-Length': '127', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,488 DEBUG Finished Request
+2025-03-04 23:59:20,488 DEBUG GET http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.100/text {}
+2025-03-04 23:59:20,491 DEBUG http://localhost:56685 "GET /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.100/text HTTP/11" 200 0
+2025-03-04 23:59:20,491 DEBUG Remote response: status=200 | data={"value":"213 тыс просмотров"} | headers=HTTPHeaderDict({'Content-Length': '43', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,491 DEBUG Finished Request
+2025-03-04 23:59:20,491 DEBUG POST http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.58/elements {'using': 'css selector', 'value': '.page_verified'}
+2025-03-04 23:59:20,494 DEBUG http://localhost:56685 "POST /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.58/elements HTTP/11" 200 0
+2025-03-04 23:59:20,494 DEBUG Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.101"}]} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,494 DEBUG Finished Request
+2025-03-04 23:59:20,494 DEBUG POST http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.59/element {'using': 'css selector', 'value': '.VideoCard__title'}
+2025-03-04 23:59:20,496 DEBUG http://localhost:56685 "POST /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.59/element HTTP/11" 200 0
+2025-03-04 23:59:20,496 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.102"}} | headers=HTTPHeaderDict({'Content-Length': '127', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,496 DEBUG Finished Request
+2025-03-04 23:59:20,496 DEBUG GET http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.102/text {}
+2025-03-04 23:59:20,499 DEBUG http://localhost:56685 "GET /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.102/text HTTP/11" 200 0
+2025-03-04 23:59:20,499 DEBUG Remote response: status=200 | data={"value":"302. Редкий ЗИЛ 4972 / Космонавты любят эти машины"} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,499 DEBUG Finished Request
+2025-03-04 23:59:20,499 DEBUG POST http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.59/element {'using': 'css selector', 'value': '.VideoCard__ownerLink'}
+2025-03-04 23:59:20,502 DEBUG http://localhost:56685 "POST /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.59/element HTTP/11" 200 0
+2025-03-04 23:59:20,502 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.103"}} | headers=HTTPHeaderDict({'Content-Length': '127', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,502 DEBUG Finished Request
+2025-03-04 23:59:20,502 DEBUG GET http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.103/text {}
+2025-03-04 23:59:20,505 DEBUG http://localhost:56685 "GET /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.103/text HTTP/11" 200 0
+2025-03-04 23:59:20,505 DEBUG Remote response: status=200 | data={"value":"[Полигон 98] - Официальная группа"} | headers=HTTPHeaderDict({'Content-Length': '69', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,505 DEBUG Finished Request
+2025-03-04 23:59:20,505 DEBUG POST http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.59/element {'using': 'css selector', 'value': '.VideoCard__extendedInfoView'}
+2025-03-04 23:59:20,507 DEBUG http://localhost:56685 "POST /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.59/element HTTP/11" 200 0
+2025-03-04 23:59:20,507 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.104"}} | headers=HTTPHeaderDict({'Content-Length': '127', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,507 DEBUG Finished Request
+2025-03-04 23:59:20,507 DEBUG GET http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.104/text {}
+2025-03-04 23:59:20,510 DEBUG http://localhost:56685 "GET /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.104/text HTTP/11" 200 0
+2025-03-04 23:59:20,510 DEBUG Remote response: status=200 | data={"value":"219 тыс просмотров"} | headers=HTTPHeaderDict({'Content-Length': '43', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,510 DEBUG Finished Request
+2025-03-04 23:59:20,510 DEBUG POST http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.59/elements {'using': 'css selector', 'value': '.page_verified'}
+2025-03-04 23:59:20,513 DEBUG http://localhost:56685 "POST /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.59/elements HTTP/11" 200 0
+2025-03-04 23:59:20,513 DEBUG Remote response: status=200 | data={"value":[]} | headers=HTTPHeaderDict({'Content-Length': '12', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,513 DEBUG Finished Request
+2025-03-04 23:59:20,513 DEBUG POST http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.60/element {'using': 'css selector', 'value': '.VideoCard__title'}
+2025-03-04 23:59:20,516 DEBUG http://localhost:56685 "POST /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.60/element HTTP/11" 200 0
+2025-03-04 23:59:20,516 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.105"}} | headers=HTTPHeaderDict({'Content-Length': '127', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,516 DEBUG Finished Request
+2025-03-04 23:59:20,516 DEBUG GET http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.105/text {}
+2025-03-04 23:59:20,518 DEBUG http://localhost:56685 "GET /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.105/text HTTP/11" 200 0
+2025-03-04 23:59:20,519 DEBUG Remote response: status=200 | data={"value":"СОБИРАЕМ ДВИГАТЕЛЬ под ВОДОЙ - ЗАВЕДЕТСЯ?"} | headers=HTTPHeaderDict({'Content-Length': '87', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,519 DEBUG Finished Request
+2025-03-04 23:59:20,519 DEBUG POST http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.60/element {'using': 'css selector', 'value': '.VideoCard__ownerLink'}
+2025-03-04 23:59:20,521 DEBUG http://localhost:56685 "POST /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.60/element HTTP/11" 200 0
+2025-03-04 23:59:20,521 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.106"}} | headers=HTTPHeaderDict({'Content-Length': '127', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,521 DEBUG Finished Request
+2025-03-04 23:59:20,521 DEBUG GET http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.106/text {}
+2025-03-04 23:59:20,524 DEBUG http://localhost:56685 "GET /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.106/text HTTP/11" 200 0
+2025-03-04 23:59:20,524 DEBUG Remote response: status=200 | data={"value":"Гараж 54"} | headers=HTTPHeaderDict({'Content-Length': '25', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,524 DEBUG Finished Request
+2025-03-04 23:59:20,524 DEBUG POST http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.60/element {'using': 'css selector', 'value': '.VideoCard__extendedInfoView'}
+2025-03-04 23:59:20,526 DEBUG http://localhost:56685 "POST /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.60/element HTTP/11" 200 0
+2025-03-04 23:59:20,526 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.107"}} | headers=HTTPHeaderDict({'Content-Length': '127', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,526 DEBUG Finished Request
+2025-03-04 23:59:20,527 DEBUG GET http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.107/text {}
+2025-03-04 23:59:20,529 DEBUG http://localhost:56685 "GET /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.107/text HTTP/11" 200 0
+2025-03-04 23:59:20,529 DEBUG Remote response: status=200 | data={"value":"241 тыс просмотров"} | headers=HTTPHeaderDict({'Content-Length': '43', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,529 DEBUG Finished Request
+2025-03-04 23:59:20,529 DEBUG POST http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.60/elements {'using': 'css selector', 'value': '.page_verified'}
+2025-03-04 23:59:20,532 DEBUG http://localhost:56685 "POST /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.60/elements HTTP/11" 200 0
+2025-03-04 23:59:20,532 DEBUG Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.108"}]} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,532 DEBUG Finished Request
+2025-03-04 23:59:20,532 DEBUG POST http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.61/element {'using': 'css selector', 'value': '.VideoCard__title'}
+2025-03-04 23:59:20,535 DEBUG http://localhost:56685 "POST /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.61/element HTTP/11" 200 0
+2025-03-04 23:59:20,535 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.109"}} | headers=HTTPHeaderDict({'Content-Length': '127', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,535 DEBUG Finished Request
+2025-03-04 23:59:20,535 DEBUG GET http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.109/text {}
+2025-03-04 23:59:20,537 DEBUG http://localhost:56685 "GET /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.109/text HTTP/11" 200 0
+2025-03-04 23:59:20,537 DEBUG Remote response: status=200 | data={"value":"Однажды в России: Свободные отношения"} | headers=HTTPHeaderDict({'Content-Length': '81', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,537 DEBUG Finished Request
+2025-03-04 23:59:20,537 DEBUG POST http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.61/element {'using': 'css selector', 'value': '.VideoCard__ownerLink'}
+2025-03-04 23:59:20,540 DEBUG http://localhost:56685 "POST /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.61/element HTTP/11" 200 0
+2025-03-04 23:59:20,540 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.110"}} | headers=HTTPHeaderDict({'Content-Length': '127', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,540 DEBUG Finished Request
+2025-03-04 23:59:20,540 DEBUG GET http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.110/text {}
+2025-03-04 23:59:20,543 DEBUG http://localhost:56685 "GET /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.110/text HTTP/11" 200 0
+2025-03-04 23:59:20,543 DEBUG Remote response: status=200 | data={"value":"ТНТ Видео"} | headers=HTTPHeaderDict({'Content-Length': '29', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,543 DEBUG Finished Request
+2025-03-04 23:59:20,543 DEBUG POST http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.61/element {'using': 'css selector', 'value': '.VideoCard__extendedInfoView'}
+2025-03-04 23:59:20,545 DEBUG http://localhost:56685 "POST /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.61/element HTTP/11" 200 0
+2025-03-04 23:59:20,545 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.111"}} | headers=HTTPHeaderDict({'Content-Length': '127', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,545 DEBUG Finished Request
+2025-03-04 23:59:20,545 DEBUG GET http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.111/text {}
+2025-03-04 23:59:20,548 DEBUG http://localhost:56685 "GET /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.111/text HTTP/11" 200 0
+2025-03-04 23:59:20,548 DEBUG Remote response: status=200 | data={"value":"291 тыс просмотров"} | headers=HTTPHeaderDict({'Content-Length': '43', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,548 DEBUG Finished Request
+2025-03-04 23:59:20,548 DEBUG POST http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.61/elements {'using': 'css selector', 'value': '.page_verified'}
+2025-03-04 23:59:20,551 DEBUG http://localhost:56685 "POST /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.61/elements HTTP/11" 200 0
+2025-03-04 23:59:20,551 DEBUG Remote response: status=200 | data={"value":[]} | headers=HTTPHeaderDict({'Content-Length': '12', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,551 DEBUG Finished Request
+2025-03-04 23:59:20,551 DEBUG POST http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.62/element {'using': 'css selector', 'value': '.VideoCard__title'}
+2025-03-04 23:59:20,554 DEBUG http://localhost:56685 "POST /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.62/element HTTP/11" 200 0
+2025-03-04 23:59:20,554 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.112"}} | headers=HTTPHeaderDict({'Content-Length': '127', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,554 DEBUG Finished Request
+2025-03-04 23:59:20,554 DEBUG GET http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.112/text {}
+2025-03-04 23:59:20,557 DEBUG http://localhost:56685 "GET /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.112/text HTTP/11" 200 0
+2025-03-04 23:59:20,557 DEBUG Remote response: status=200 | data={"value":"100 Товаров по 100 Рублей с WiILDBERRIES💜 *2025* Все Для Дома, Косметика, Вкусняшки, Аксессуары и тд"} | headers=HTTPHeaderDict({'Content-Length': '172', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,557 DEBUG Finished Request
+2025-03-04 23:59:20,557 DEBUG POST http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.62/element {'using': 'css selector', 'value': '.VideoCard__ownerLink'}
+2025-03-04 23:59:20,559 DEBUG http://localhost:56685 "POST /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.62/element HTTP/11" 200 0
+2025-03-04 23:59:20,559 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.113"}} | headers=HTTPHeaderDict({'Content-Length': '127', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,559 DEBUG Finished Request
+2025-03-04 23:59:20,559 DEBUG GET http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.113/text {}
+2025-03-04 23:59:20,562 DEBUG http://localhost:56685 "GET /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.113/text HTTP/11" 200 0
+2025-03-04 23:59:20,562 DEBUG Remote response: status=200 | data={"value":"Masha Zoom"} | headers=HTTPHeaderDict({'Content-Length': '22', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,562 DEBUG Finished Request
+2025-03-04 23:59:20,562 DEBUG POST http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.62/element {'using': 'css selector', 'value': '.VideoCard__extendedInfoView'}
+2025-03-04 23:59:20,565 DEBUG http://localhost:56685 "POST /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.62/element HTTP/11" 200 0
+2025-03-04 23:59:20,565 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.114"}} | headers=HTTPHeaderDict({'Content-Length': '127', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,565 DEBUG Finished Request
+2025-03-04 23:59:20,565 DEBUG GET http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.114/text {}
+2025-03-04 23:59:20,567 DEBUG http://localhost:56685 "GET /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.114/text HTTP/11" 200 0
+2025-03-04 23:59:20,567 DEBUG Remote response: status=200 | data={"value":"153 тыс просмотров"} | headers=HTTPHeaderDict({'Content-Length': '43', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,567 DEBUG Finished Request
+2025-03-04 23:59:20,568 DEBUG POST http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.62/elements {'using': 'css selector', 'value': '.page_verified'}
+2025-03-04 23:59:20,570 DEBUG http://localhost:56685 "POST /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.62/elements HTTP/11" 200 0
+2025-03-04 23:59:20,570 DEBUG Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.115"}]} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,570 DEBUG Finished Request
+2025-03-04 23:59:20,570 DEBUG POST http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.63/element {'using': 'css selector', 'value': '.VideoCard__title'}
+2025-03-04 23:59:20,573 DEBUG http://localhost:56685 "POST /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.63/element HTTP/11" 200 0
+2025-03-04 23:59:20,573 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.116"}} | headers=HTTPHeaderDict({'Content-Length': '127', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,573 DEBUG Finished Request
+2025-03-04 23:59:20,573 DEBUG GET http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.116/text {}
+2025-03-04 23:59:20,576 DEBUG http://localhost:56685 "GET /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.116/text HTTP/11" 200 0
+2025-03-04 23:59:20,576 DEBUG Remote response: status=200 | data={"value":"Сразу после боя: Искандар Зияев - Нерсисян. Хайбула Мусалов в гневе / Полное интервью"} | headers=HTTPHeaderDict({'Content-Length': '165', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,576 DEBUG Finished Request
+2025-03-04 23:59:20,576 DEBUG POST http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.63/element {'using': 'css selector', 'value': '.VideoCard__ownerLink'}
+2025-03-04 23:59:20,578 DEBUG http://localhost:56685 "POST /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.63/element HTTP/11" 200 0
+2025-03-04 23:59:20,578 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.117"}} | headers=HTTPHeaderDict({'Content-Length': '127', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,578 DEBUG Finished Request
+2025-03-04 23:59:20,578 DEBUG GET http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.117/text {}
+2025-03-04 23:59:20,582 DEBUG http://localhost:56685 "GET /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.117/text HTTP/11" 200 0
+2025-03-04 23:59:20,582 DEBUG Remote response: status=200 | data={"value":"КИМЧИ ПОП-ММА"} | headers=HTTPHeaderDict({'Content-Length': '36', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,582 DEBUG Finished Request
+2025-03-04 23:59:20,582 DEBUG POST http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.63/element {'using': 'css selector', 'value': '.VideoCard__extendedInfoView'}
+2025-03-04 23:59:20,585 DEBUG http://localhost:56685 "POST /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.63/element HTTP/11" 200 0
+2025-03-04 23:59:20,585 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.118"}} | headers=HTTPHeaderDict({'Content-Length': '127', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,585 DEBUG Finished Request
+2025-03-04 23:59:20,585 DEBUG GET http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.118/text {}
+2025-03-04 23:59:20,588 DEBUG http://localhost:56685 "GET /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.118/text HTTP/11" 200 0
+2025-03-04 23:59:20,588 DEBUG Remote response: status=200 | data={"value":"164 тыс просмотров"} | headers=HTTPHeaderDict({'Content-Length': '43', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,588 DEBUG Finished Request
+2025-03-04 23:59:20,588 DEBUG POST http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.63/elements {'using': 'css selector', 'value': '.page_verified'}
+2025-03-04 23:59:20,590 DEBUG http://localhost:56685 "POST /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.63/elements HTTP/11" 200 0
+2025-03-04 23:59:20,590 DEBUG Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.119"}]} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,590 DEBUG Finished Request
+2025-03-04 23:59:20,590 DEBUG POST http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.64/element {'using': 'css selector', 'value': '.VideoCard__title'}
+2025-03-04 23:59:20,593 DEBUG http://localhost:56685 "POST /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.64/element HTTP/11" 200 0
+2025-03-04 23:59:20,593 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.120"}} | headers=HTTPHeaderDict({'Content-Length': '127', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,593 DEBUG Finished Request
+2025-03-04 23:59:20,593 DEBUG GET http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.120/text {}
+2025-03-04 23:59:20,596 DEBUG http://localhost:56685 "GET /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.120/text HTTP/11" 200 0
+2025-03-04 23:59:20,596 DEBUG Remote response: status=200 | data={"value":"Влог Сочи / Зимние каникулы"} | headers=HTTPHeaderDict({'Content-Length': '61', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,596 DEBUG Finished Request
+2025-03-04 23:59:20,596 DEBUG POST http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.64/element {'using': 'css selector', 'value': '.VideoCard__ownerLink'}
+2025-03-04 23:59:20,599 DEBUG http://localhost:56685 "POST /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.64/element HTTP/11" 200 0
+2025-03-04 23:59:20,599 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.121"}} | headers=HTTPHeaderDict({'Content-Length': '127', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,599 DEBUG Finished Request
+2025-03-04 23:59:20,599 DEBUG GET http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.121/text {}
+2025-03-04 23:59:20,602 DEBUG http://localhost:56685 "GET /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.121/text HTTP/11" 200 0
+2025-03-04 23:59:20,602 DEBUG Remote response: status=200 | data={"value":"Anyaischuk"} | headers=HTTPHeaderDict({'Content-Length': '22', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,602 DEBUG Finished Request
+2025-03-04 23:59:20,602 DEBUG POST http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.64/element {'using': 'css selector', 'value': '.VideoCard__extendedInfoView'}
+2025-03-04 23:59:20,604 DEBUG http://localhost:56685 "POST /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.64/element HTTP/11" 200 0
+2025-03-04 23:59:20,604 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.122"}} | headers=HTTPHeaderDict({'Content-Length': '127', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,604 DEBUG Finished Request
+2025-03-04 23:59:20,604 DEBUG GET http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.122/text {}
+2025-03-04 23:59:20,607 DEBUG http://localhost:56685 "GET /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.122/text HTTP/11" 200 0
+2025-03-04 23:59:20,607 DEBUG Remote response: status=200 | data={"value":"385 тыс просмотров"} | headers=HTTPHeaderDict({'Content-Length': '43', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,607 DEBUG Finished Request
+2025-03-04 23:59:20,607 DEBUG POST http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.64/elements {'using': 'css selector', 'value': '.page_verified'}
+2025-03-04 23:59:20,610 DEBUG http://localhost:56685 "POST /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.64/elements HTTP/11" 200 0
+2025-03-04 23:59:20,610 DEBUG Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.123"}]} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,610 DEBUG Finished Request
+2025-03-04 23:59:20,610 DEBUG POST http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.65/element {'using': 'css selector', 'value': '.VideoCard__title'}
+2025-03-04 23:59:20,612 DEBUG http://localhost:56685 "POST /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.65/element HTTP/11" 200 0
+2025-03-04 23:59:20,612 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.124"}} | headers=HTTPHeaderDict({'Content-Length': '127', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,612 DEBUG Finished Request
+2025-03-04 23:59:20,612 DEBUG GET http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.124/text {}
+2025-03-04 23:59:20,615 DEBUG http://localhost:56685 "GET /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.124/text HTTP/11" 200 0
+2025-03-04 23:59:20,615 DEBUG Remote response: status=200 | data={"value":"СВАДЬБА и ПРЕДЛОЖЕНИЕ в Дубровском Синдикате"} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,615 DEBUG Finished Request
+2025-03-04 23:59:20,615 DEBUG POST http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.65/element {'using': 'css selector', 'value': '.VideoCard__ownerLink'}
+2025-03-04 23:59:20,618 DEBUG http://localhost:56685 "POST /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.65/element HTTP/11" 200 0
+2025-03-04 23:59:20,618 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.125"}} | headers=HTTPHeaderDict({'Content-Length': '127', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,618 DEBUG Finished Request
+2025-03-04 23:59:20,618 DEBUG GET http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.125/text {}
+2025-03-04 23:59:20,621 DEBUG http://localhost:56685 "GET /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.125/text HTTP/11" 200 0
+2025-03-04 23:59:20,621 DEBUG Remote response: status=200 | data={"value":"Motor Heart Studio"} | headers=HTTPHeaderDict({'Content-Length': '30', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,621 DEBUG Finished Request
+2025-03-04 23:59:20,621 DEBUG POST http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.65/element {'using': 'css selector', 'value': '.VideoCard__extendedInfoView'}
+2025-03-04 23:59:20,623 DEBUG http://localhost:56685 "POST /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.65/element HTTP/11" 200 0
+2025-03-04 23:59:20,623 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.126"}} | headers=HTTPHeaderDict({'Content-Length': '127', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,623 DEBUG Finished Request
+2025-03-04 23:59:20,623 DEBUG GET http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.126/text {}
+2025-03-04 23:59:20,626 DEBUG http://localhost:56685 "GET /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.126/text HTTP/11" 200 0
+2025-03-04 23:59:20,626 DEBUG Remote response: status=200 | data={"value":"145 тыс просмотров"} | headers=HTTPHeaderDict({'Content-Length': '43', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,626 DEBUG Finished Request
+2025-03-04 23:59:20,626 DEBUG POST http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.65/elements {'using': 'css selector', 'value': '.page_verified'}
+2025-03-04 23:59:20,629 DEBUG http://localhost:56685 "POST /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.65/elements HTTP/11" 200 0
+2025-03-04 23:59:20,629 DEBUG Remote response: status=200 | data={"value":[]} | headers=HTTPHeaderDict({'Content-Length': '12', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,629 DEBUG Finished Request
+2025-03-04 23:59:20,629 DEBUG POST http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.66/element {'using': 'css selector', 'value': '.VideoCard__title'}
+2025-03-04 23:59:20,631 DEBUG http://localhost:56685 "POST /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.66/element HTTP/11" 200 0
+2025-03-04 23:59:20,631 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.127"}} | headers=HTTPHeaderDict({'Content-Length': '127', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,632 DEBUG Finished Request
+2025-03-04 23:59:20,632 DEBUG GET http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.127/text {}
+2025-03-04 23:59:20,634 DEBUG http://localhost:56685 "GET /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.127/text HTTP/11" 200 0
+2025-03-04 23:59:20,634 DEBUG Remote response: status=200 | data={"value":"Десятка уволила тренера, судьба Родины Медиа, новые правила MFL | AGM #66"} | headers=HTTPHeaderDict({'Content-Length': '135', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,634 DEBUG Finished Request
+2025-03-04 23:59:20,634 DEBUG POST http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.66/element {'using': 'css selector', 'value': '.VideoCard__ownerLink'}
+2025-03-04 23:59:20,637 DEBUG http://localhost:56685 "POST /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.66/element HTTP/11" 200 0
+2025-03-04 23:59:20,637 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.128"}} | headers=HTTPHeaderDict({'Content-Length': '127', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,637 DEBUG Finished Request
+2025-03-04 23:59:20,637 DEBUG GET http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.128/text {}
+2025-03-04 23:59:20,640 DEBUG http://localhost:56685 "GET /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.128/text HTTP/11" 200 0
+2025-03-04 23:59:20,640 DEBUG Remote response: status=200 | data={"value":"Winline Media League | Медиалига"} | headers=HTTPHeaderDict({'Content-Length': '53', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,640 DEBUG Finished Request
+2025-03-04 23:59:20,640 DEBUG POST http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.66/element {'using': 'css selector', 'value': '.VideoCard__extendedInfoView'}
+2025-03-04 23:59:20,643 DEBUG http://localhost:56685 "POST /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.66/element HTTP/11" 200 0
+2025-03-04 23:59:20,643 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.129"}} | headers=HTTPHeaderDict({'Content-Length': '127', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,643 DEBUG Finished Request
+2025-03-04 23:59:20,643 DEBUG GET http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.129/text {}
+2025-03-04 23:59:20,645 DEBUG http://localhost:56685 "GET /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.129/text HTTP/11" 200 0
+2025-03-04 23:59:20,645 DEBUG Remote response: status=200 | data={"value":"351 тыс просмотров"} | headers=HTTPHeaderDict({'Content-Length': '43', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,645 DEBUG Finished Request
+2025-03-04 23:59:20,645 DEBUG POST http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.66/elements {'using': 'css selector', 'value': '.page_verified'}
+2025-03-04 23:59:20,648 DEBUG http://localhost:56685 "POST /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.66/elements HTTP/11" 200 0
+2025-03-04 23:59:20,648 DEBUG Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.130"}]} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,648 DEBUG Finished Request
+2025-03-04 23:59:20,648 DEBUG POST http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.67/element {'using': 'css selector', 'value': '.VideoCard__title'}
+2025-03-04 23:59:20,651 DEBUG http://localhost:56685 "POST /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.67/element HTTP/11" 200 0
+2025-03-04 23:59:20,651 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.131"}} | headers=HTTPHeaderDict({'Content-Length': '127', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,651 DEBUG Finished Request
+2025-03-04 23:59:20,651 DEBUG GET http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.131/text {}
+2025-03-04 23:59:20,654 DEBUG http://localhost:56685 "GET /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.131/text HTTP/11" 200 0
+2025-03-04 23:59:20,654 DEBUG Remote response: status=200 | data={"value":"Когда кухня слишком ВЫСОКА!? Ресторан Inner. Славный Обзор"} | headers=HTTPHeaderDict({'Content-Length': '113', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,654 DEBUG Finished Request
+2025-03-04 23:59:20,654 DEBUG POST http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.67/element {'using': 'css selector', 'value': '.VideoCard__ownerLink'}
+2025-03-04 23:59:20,656 DEBUG http://localhost:56685 "POST /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.67/element HTTP/11" 200 0
+2025-03-04 23:59:20,656 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.132"}} | headers=HTTPHeaderDict({'Content-Length': '127', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,656 DEBUG Finished Request
+2025-03-04 23:59:20,656 DEBUG GET http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.132/text {}
+2025-03-04 23:59:20,659 DEBUG http://localhost:56685 "GET /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.132/text HTTP/11" 200 0
+2025-03-04 23:59:20,659 DEBUG Remote response: status=200 | data={"value":"Славный Друже Oblomoff"} | headers=HTTPHeaderDict({'Content-Length': '46', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,659 DEBUG Finished Request
+2025-03-04 23:59:20,659 DEBUG POST http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.67/element {'using': 'css selector', 'value': '.VideoCard__extendedInfoView'}
+2025-03-04 23:59:20,662 DEBUG http://localhost:56685 "POST /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.67/element HTTP/11" 200 0
+2025-03-04 23:59:20,662 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.133"}} | headers=HTTPHeaderDict({'Content-Length': '127', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,662 DEBUG Finished Request
+2025-03-04 23:59:20,662 DEBUG GET http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.133/text {}
+2025-03-04 23:59:20,665 DEBUG http://localhost:56685 "GET /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.133/text HTTP/11" 200 0
+2025-03-04 23:59:20,665 DEBUG Remote response: status=200 | data={"value":"179 тыс просмотров"} | headers=HTTPHeaderDict({'Content-Length': '43', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,665 DEBUG Finished Request
+2025-03-04 23:59:20,665 DEBUG POST http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.67/elements {'using': 'css selector', 'value': '.page_verified'}
+2025-03-04 23:59:20,667 DEBUG http://localhost:56685 "POST /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.67/elements HTTP/11" 200 0
+2025-03-04 23:59:20,667 DEBUG Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.134"}]} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,667 DEBUG Finished Request
+2025-03-04 23:59:20,667 DEBUG POST http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.68/element {'using': 'css selector', 'value': '.VideoCard__title'}
+2025-03-04 23:59:20,670 DEBUG http://localhost:56685 "POST /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.68/element HTTP/11" 200 0
+2025-03-04 23:59:20,670 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.135"}} | headers=HTTPHeaderDict({'Content-Length': '127', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,670 DEBUG Finished Request
+2025-03-04 23:59:20,670 DEBUG GET http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.135/text {}
+2025-03-04 23:59:20,673 DEBUG http://localhost:56685 "GET /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.135/text HTTP/11" 200 0
+2025-03-04 23:59:20,673 DEBUG Remote response: status=200 | data={"value":"Перехожу на iPhone 16e: есть ли жизнь с 60Hz и 1 камерой?"} | headers=HTTPHeaderDict({'Content-Length': '99', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,673 DEBUG Finished Request
+2025-03-04 23:59:20,673 DEBUG POST http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.68/element {'using': 'css selector', 'value': '.VideoCard__ownerLink'}
+2025-03-04 23:59:20,676 DEBUG http://localhost:56685 "POST /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.68/element HTTP/11" 200 0
+2025-03-04 23:59:20,676 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.136"}} | headers=HTTPHeaderDict({'Content-Length': '127', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,676 DEBUG Finished Request
+2025-03-04 23:59:20,676 DEBUG GET http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.136/text {}
+2025-03-04 23:59:20,679 DEBUG http://localhost:56685 "GET /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.136/text HTTP/11" 200 0
+2025-03-04 23:59:20,679 DEBUG Remote response: status=200 | data={"value":"Wylsacom"} | headers=HTTPHeaderDict({'Content-Length': '20', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,679 DEBUG Finished Request
+2025-03-04 23:59:20,679 DEBUG POST http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.68/element {'using': 'css selector', 'value': '.VideoCard__extendedInfoView'}
+2025-03-04 23:59:20,682 DEBUG http://localhost:56685 "POST /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.68/element HTTP/11" 200 0
+2025-03-04 23:59:20,682 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.137"}} | headers=HTTPHeaderDict({'Content-Length': '127', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,682 DEBUG Finished Request
+2025-03-04 23:59:20,682 DEBUG GET http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.137/text {}
+2025-03-04 23:59:20,684 DEBUG http://localhost:56685 "GET /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.137/text HTTP/11" 200 0
+2025-03-04 23:59:20,684 DEBUG Remote response: status=200 | data={"value":"136 тыс просмотров"} | headers=HTTPHeaderDict({'Content-Length': '43', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,684 DEBUG Finished Request
+2025-03-04 23:59:20,684 DEBUG POST http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.68/elements {'using': 'css selector', 'value': '.page_verified'}
+2025-03-04 23:59:20,687 DEBUG http://localhost:56685 "POST /session/5bf71c1b48dbc5565bf63727039754f0/element/f.7A43221425700B63A3E2A8553C7ADA66.d.A19055D05335ECD7EB0EB96D3556D9B7.e.68/elements HTTP/11" 200 0
+2025-03-04 23:59:20,687 DEBUG Remote response: status=200 | data={"value":[]} | headers=HTTPHeaderDict({'Content-Length': '12', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,687 DEBUG Finished Request
+2025-03-04 23:59:20,687 DEBUG DELETE http://localhost:56685/session/5bf71c1b48dbc5565bf63727039754f0 {}
+2025-03-04 23:59:20,744 DEBUG http://localhost:56685 "DELETE /session/5bf71c1b48dbc5565bf63727039754f0 HTTP/11" 200 0
+2025-03-04 23:59:20,744 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-04 23:59:20,744 DEBUG Finished Request

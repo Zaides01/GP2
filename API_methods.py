@@ -3,10 +3,10 @@ import logging
 
 from vk_request import vk_request
 
-logger_API = logging.getLogger("API_methods.log")
+logger_API = logging.getLogger("logs/API_methods.log")
 logger_API.setLevel(logging.INFO)
 
-handler_API = logging.FileHandler("API_methods.log", mode='w')
+handler_API = logging.FileHandler("logs/API_methods.log", mode='w')
 formatter_API = logging.Formatter("%(name)s %(asctime)s %(levelname)s %(message)s")
 
 handler_API.setFormatter(formatter_API)
@@ -27,7 +27,7 @@ def get_all_videos(group_id):
             "extended": 1,
         }
         try:
-            data = vk_request("video.getAlbums", params)
+            data = vk_request("video.get", params)
         except Exception as err:
             logger_API.error(f"Ошибка при обращении к АПИ у {group_id}: {err}")
 
@@ -77,7 +77,7 @@ def get_unique_album_videos(group_id):
 
     for album in albums:
         album_id = album["id"]
-        count = 200
+        count = 100
         offset = 0
 
         while True:
@@ -89,7 +89,7 @@ def get_unique_album_videos(group_id):
                 "extended": 1,
             }
             try:
-                data = vk_request("video.getAlbums", params)
+                data = vk_request("video.get", video_params)
             except Exception as err:
                 logger_API.error(f"Ошибка при обращении к АПИ у {group_id}: {err}")
 
@@ -112,7 +112,7 @@ def get_unique_album_videos(group_id):
             except AttributeError as err:
                 logger_API.warning(f"Пустой ответ на запрос видео из альбома из сообщества {group_id}")
             
-            time.sleep(0.5)
+        time.sleep(0.5)
 
     return len(unique_video)
 
@@ -161,45 +161,36 @@ def get_wall_info(owner_id, domain):
 
 
 ## 5ый запрос к АПИ - метод video.getComments - получим по одному последнему комментариб на видео
-def get_video_comment(batch):
+def get_video_comment(batch, df):
     logger_API.info("ФУНКЦИЯ GET_VIDEO_COMMENT!!!")
     video_data = []
-    comments = []
 
     for _, row in batch.iterrows():
         video_data.append({
             "owner_id": row["owner_id"],
             "video_id": row["id"]
         })
+
     execute_code = "return ["
     for video in video_data:
         execute_code += f'API.video.getComments({{"owner_id": {video["owner_id"]}, "video_id": {video["video_id"]}, "count": 1, "sort": "desc"}}),'
     execute_code = execute_code.rstrip(',') + "];"
     try:
         response = vk_request("execute", {"code": execute_code})
-        logger_API.info(response)
     except Exception as err:
         logger_API.error(f"Ошибка при вызове метода execute: {err}")
 
-    if "response" in response:
-        for (index, row), data in zip(batch.iterrows(), response["response"]):
-            if data and "items" in data and len(data["items"]) > 0:
-                comment_text = data["items"][0].get("text", "")
-                comments.append({
-                    "owner_id": row["owner_id"],
-                    "video_id": row["id"],
-                    "top_comment_text": comment_text
-                })
-            else:
-                comments.append({
-                    "owner_id": row["owner_id"],
-                    "video_id": row["id"],
-                    "top_comment_text": ""
-                })
-                owner_id = row["owner_id"]
-                video_id = row["id"]
-                logger_API.info(f"Тут {owner_id}, {video_id} закрыты комментарии")
-        logger_API.info(f"Успешно получили комментарии для {len(comments)} видео")
-    time.sleep(0.5)
+    if response:
+        for i, video in enumerate(batch.iterrows()):
+            index = video[0]
+            data = response[i]
 
-    return comments
+            if data and "items" in data and len(data["items"]) > 0:
+                df.at[index, "top_comment_text"] = data["items"][0].get("text", "")
+            else:
+                video_name = df.at[index, "title"]
+                logger_API.info(f"Проблема с комментариями к видео {video_name}")
+                
+        logger_API.info(f"Успешно получили комментарии для {len(batch)} видео")
+
+    time.sleep(0.5)
